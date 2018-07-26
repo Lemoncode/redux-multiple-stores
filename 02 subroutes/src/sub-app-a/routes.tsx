@@ -12,10 +12,8 @@ export const subAppARoutesPath = {
 }
 
 export const SubAppARoutes = () =>
-  <MainLayout>
-    <>
+  <MainLayout>    
       <Route path={subAppARoutesPath.main} component={MainPage} />
-      <Route  path={subAppARoutesPath.sub} component={SubPage} />
-    </>
+      <Route  path={subAppARoutesPath.sub} component={SubPage} />    
   </MainLayout>
 

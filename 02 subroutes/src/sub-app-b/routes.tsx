@@ -12,11 +12,9 @@ export const subAppBRoutesPath = {
 }
 
 export const SubAppBRoutes = () =>
-  <MainLayout>
-    <>
+  <MainLayout>    
       <Route path={subAppBRoutesPath.main} component={MainPage} />
-      <Route path={subAppBRoutesPath.sub} component={SubPage} />
-    </>
+      <Route path={subAppBRoutesPath.sub} component={SubPage} />    
   </MainLayout>
 
 
