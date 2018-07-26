@@ -3,19 +3,20 @@ import { Route, Switch } from 'react-router';
 import { MainPage, SubPage } from './pages';
 import { MainLayout } from './layouts/mainLayout';
 
-const baseUrl = '/app-a';
+const baseUrl = '/app-b';
 
-export const subAppARoutesPath = {  
+export const subAppBRoutesPath = {
   root: baseUrl,
   main: `${baseUrl}/main`,
   sub: `${baseUrl}/sub`,
 }
 
-export const SubAppARoutes = () =>
+export const SubAppBRoutes = () =>
   <MainLayout>
     <>
-      <Route path={subAppARoutesPath.main} component={MainPage} />
-      <Route  path={subAppARoutesPath.sub} component={SubPage} />
+      <Route path={subAppBRoutesPath.main} component={MainPage} />
+      <Route path={subAppBRoutesPath.sub} component={SubPage} />
     </>
   </MainLayout>
+
 

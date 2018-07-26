@@ -1,1 +1,1 @@
-export const STORE_KEY= 'subAppB';
+export const STORE_KEY= 'subAppA';
