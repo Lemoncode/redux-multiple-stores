@@ -2,7 +2,6 @@ import * as React from 'react';
 import { createStore } from 'redux';
 import { createProvider } from 'react-redux';
 import {reducers} from './reducers';
-import {App} from './app';
 import {STORE_KEY} from './key';
 
 const nonTypedWindow : any = window;
@@ -13,4 +12,4 @@ export const store = createStore(reducers,
 
 export const Provider = createProvider(STORE_KEY);
 
-export {SubAppARoutes, subAppARoutesPath} from './routes';
+export {subAppARoutes, subAppARoutesPath} from './routes';

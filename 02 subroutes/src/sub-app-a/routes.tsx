@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Route} from 'react-router';
+import { Route, Switch} from 'react-router';
 import {MainPage, SubPage} from './pages';
 
 const baseUrl = '/app-a';
@@ -10,12 +10,16 @@ export const subAppARoutesPath = {
   sub: `${baseUrl}/sub`,
 }
 
+/*
 export const SubAppARoutes = (
-  <Route path={subAppARoutesPath.default} component={MainPage}>
-    <Route path={subAppARoutesPath.main} component={MainPage} />
-    <Route path={subAppARoutesPath.sub} component={SubPage} />
+  <Route path={subAppARoutesPath.default} component={MainPage}>  
+    <Route exact={true} path={subAppARoutesPath.main} component={MainPage} />
+    <Route exact={true} path={subAppARoutesPath.sub} component={SubPage} />
   </Route>
+);*/
 
-);
-
+export const subAppARoutes = [
+  { path: subAppARoutesPath.main, component: MainPage },
+  { path: subAppARoutesPath.sub, component: SubPage }  
+]
 
