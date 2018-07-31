@@ -1,0 +1,1 @@
+export const STORE_KEY= 'cpu-module'; // Add ad GUID to avoid collisions?

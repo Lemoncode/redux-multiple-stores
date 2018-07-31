@@ -1,0 +1,1 @@
+export {CPUModuleRoutes, CPUModuleRoutesPath} from './routes';
