@@ -7,7 +7,7 @@ import { Dashboard } from './dashboard';
 
 
 ReactDOM.render(    
-    <>      
+    <>                  
       <HashRouter>
         <Switch>
           <Route exact={true} path="/" component={Dashboard}/>                    
@@ -15,7 +15,7 @@ ReactDOM.render(
           <Route path={subAppBRoutesPath.root} component={SubAppBRoutes}/>
           
         </Switch>
-      </HashRouter>      
+      </HashRouter>            
     </>  
   ,
   document.getElementById('root'));
