@@ -1,0 +1,1 @@
+export const STORE_KEY= 'subAppA'; // Add ad GUID to avoid collisions?
