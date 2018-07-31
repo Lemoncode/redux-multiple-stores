@@ -1,8 +1,12 @@
 import * as React from 'react';
-import {MainAppBar, DbPicker} from '../components';
+import {MainAppBar, DbPickerContainer} from '../components';
+import {Provider, store} from '../store'
+
 export const Layout : React.StatelessComponent = (props) => 
-  <div>
-    <MainAppBar/>
-    <DbPicker/>
-    {props.children}
-  </div>
+  <Provider store={store}>
+    <div>
+      <MainAppBar/>
+      <DbPickerContainer/>
+      {props.children}
+    </div>
+  </Provider>

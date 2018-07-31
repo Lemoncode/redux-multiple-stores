@@ -1,2 +1,2 @@
 export {MainAppBar} from './mainAppBar';
-export {DbPicker} from './dbPicker';
+export {DbPickerContainer} from './dbPicker.container';

@@ -1,0 +1,1 @@
+export const STORE_KEY= 'mainApp'; // Add ad GUID to avoid collisions?

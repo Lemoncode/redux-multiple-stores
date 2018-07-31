@@ -1,13 +1,18 @@
-import * as React from 'React';
+import * as React from 'react';
 import { Select } from '../../common/components/form';
 
-export const DbPicker = () => 
+interface Props {
+  databaseId : number;
+  onChange : (number) => void;
+}
+
+export const DbPicker = (props : Props) => 
   <div>
     <Select
       name = "db"
       label = "Choose Database:"    
-      value = {1}
+      value = {props.databaseId}
       lookup={[{id: 1, name:'CRM DB'}, {id: 2, name: 'ERP DB'}]}      
-      onChange={(fieldName, value) => console.log(value)}
+      onChange={(fieldName, value) => props.onChange(value)}
     />
   </div>
