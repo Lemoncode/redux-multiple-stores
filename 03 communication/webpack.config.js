@@ -11,6 +11,7 @@ module.exports = {
     extensions: ['.js', '.ts', '.tsx']
   },
   entry: [
+    'babel-polyfill',
     './main.tsx',
     '../node_modules/bootstrap/dist/css/bootstrap.css'
   ],

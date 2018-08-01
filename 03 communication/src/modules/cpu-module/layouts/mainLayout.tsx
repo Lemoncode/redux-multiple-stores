@@ -33,10 +33,10 @@ interface Props {
 // TODO isolate event listening to a saga
 class GobalEventComponent extends React.PureComponent<Props> {
   componentDidMount() {
-    emitter.on(databaseChangeEventId, (dbId) => {
+    /*emitter.on(databaseChangeEventId, (dbId) => {
       this.props.onDatabaseChange(dbId); 
       this.props.onRequestCPUInfo(dbId);
-    }, null);
+    }, null);*/
   }
 
   render() {

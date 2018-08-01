@@ -4,6 +4,7 @@ import { createProvider } from 'react-redux';
 import {reducers} from './reducers';
 import {STORE_KEY} from './key';
 import createSagaMiddleware from 'redux-saga';
+import {rootSaga} from './sagas';
 
 // create the saga middleware
 const sagaMiddleware = createSagaMiddleware();
@@ -15,6 +16,8 @@ export const store = createStore(reducers,
     nonTypedWindow.__REDUX_DEVTOOLS_EXTENSION__ && nonTypedWindow.__REDUX_DEVTOOLS_EXTENSION__()  
   )
  );
+
+ sagaMiddleware.run(rootSaga);
 
 
 export const Provider = createProvider(STORE_KEY);
