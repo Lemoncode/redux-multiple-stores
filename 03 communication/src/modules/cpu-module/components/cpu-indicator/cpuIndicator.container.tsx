@@ -4,6 +4,7 @@ import { STORE_KEY } from '../../key';
 import { State } from '../../reducers';
 
 const mapStateToProps = (state : State) => ({
+    databaseId: state.cpuInfoReducer.databaseId,
     percentage: state.cpuInfoReducer.percentage
 })
 
