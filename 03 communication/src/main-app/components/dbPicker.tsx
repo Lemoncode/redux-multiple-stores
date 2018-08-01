@@ -13,6 +13,6 @@ export const DbPicker = (props : Props) =>
       label = "Choose Database:"    
       value = {props.databaseId}
       lookup={[{id: 1, name:'CRM DB'}, {id: 2, name: 'ERP DB'}]}      
-      onChange={(fieldName, value) => props.onChange(value)}
+      onChange={(fieldName, value) => props.onChange(+value)}
     />
   </div>
