@@ -1,0 +1,1 @@
+export {DTUIndicatorContainer} from './dtuIndicator.container';

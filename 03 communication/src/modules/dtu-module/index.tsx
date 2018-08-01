@@ -1,0 +1,1 @@
+export {DTUModuleRoutes, DTUModuleRoutesPath} from './routes';

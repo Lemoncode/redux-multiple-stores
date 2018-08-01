@@ -1,11 +1,5 @@
 import * as React from 'react';
-import { emitter } from '../../../common/infrastructure';
-import { databaseChangeEventId } from '../../../common/const';
-import {databaseChanged, requestInfoCPU} from '../actions'
 import {Provider, store} from '../store'
-import {connect} from 'react-redux';
-import { STORE_KEY } from '../key';
-import { State } from '../reducers';
 
 export const MainLayout : React.StatelessComponent = (props) => 
   <Provider store={store}>  

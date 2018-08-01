@@ -2,7 +2,7 @@ import { emitter } from '../../../common/infrastructure';
 import { databaseChangeEventId } from '../../../common/const';
 import {delay} from 'redux-saga'
 import {put} from 'redux-saga/effects'
-import {databaseChanged, requestInfoCPU} from '../actions';
+import {databaseChanged, requestInfoDTU} from '../actions';
 
 export function* dbChangeSaga() {  
   while(true) {
@@ -12,7 +12,7 @@ export function* dbChangeSaga() {
     })  
     const dbId = yield promise;
     yield put(databaseChanged(dbId))
-    yield put(requestInfoCPU(dbId))
+    yield put(requestInfoDTU(dbId))
   }
 }
 
