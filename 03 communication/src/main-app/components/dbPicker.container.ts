@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import { DbPicker } from './dbPicker';
 import { State } from '../reducers'
 import { STORE_KEY } from '../key';
-import { updateUserProfileName } from '../actions/updateSelectedDatabase';
+import { updateSelectedDatabase } from '../actions/updateSelectedDatabase';
 
 const mapStateToProps = (state : State) => {
   return {
@@ -12,7 +12,7 @@ const mapStateToProps = (state : State) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    onChange: (databaseId : number) => dispatch(updateUserProfileName(databaseId))
+    onChange: (databaseId : number) => dispatch(updateSelectedDatabase(databaseId))
   }
 }
 
