@@ -3,13 +3,9 @@ import * as ReactDOM from 'react-dom';
 
 import {CPUModuleRoutes, CPUModuleRoutesPath} from './modules/cpu-module'
 import {DTUModuleRoutes, DTUModuleRoutesPath} from './modules/dtu-module'
-
-import {SubAppBRoutes, subAppBRoutesPath} from './sub-app-b';
 import { HashRouter, Switch, Route } from 'react-router-dom';
 import { Dashboard } from './dashboard';
 import { Layout } from './main-app/layout/layout';
-require("babel-core/register");
-require("babel-polyfill");
 
 
 ReactDOM.render(    

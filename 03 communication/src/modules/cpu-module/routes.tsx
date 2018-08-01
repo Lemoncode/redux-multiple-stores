@@ -3,7 +3,7 @@ import { Route, Switch } from 'react-router';
 import { MainPage, SubPage } from './pages';
 import { MainLayout } from './layouts/mainLayout';
 
-const baseUrl = '/app-a';
+const baseUrl = '/cpu-module';
 
 export const CPUModuleRoutesPath = {  
   root: baseUrl,

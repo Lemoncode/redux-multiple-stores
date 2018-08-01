@@ -14,7 +14,7 @@ export const MainPage = () => {
       <br/>
       <Link to="/">Go back to dashboard</Link>
       <br/>
-      <Link to="/app-b/main">Navigate to SubApp B</Link>      
+      <Link to="/dtu-module/main">Navigate to DTU Module</Link>      
     </div>
   );
 }

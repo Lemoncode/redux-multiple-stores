@@ -6,7 +6,7 @@ import { DTUIndicatorContainer } from '../components';
 export const MainPage = () => {
   return (    
     <div>
-      <h3 style={{color: 'green'}}>Hello from cpu-module</h3>
+      <h3 style={{color: 'green'}}>Hello from dtu-module</h3>
 
       <DTUIndicatorContainer/>
 
@@ -14,7 +14,7 @@ export const MainPage = () => {
       <br/>
       <Link to="/">Go back to dashboard</Link>
       <br/>
-      <Link to="/app-b/main">Navigate to SubApp B</Link>      
+      <Link to="/cpu-module/main">Navigate to CPU module</Link>      
     </div>
   );
 }
