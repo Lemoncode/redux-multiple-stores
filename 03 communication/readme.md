@@ -1,4 +1,4 @@
-# 02 Subroutes
+# 02 Communications
 
-Multiple stores, routing + subroutes
+Communication between modules event emitter
 
